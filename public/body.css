@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+:root {
+  --main-font: 'Libre Baskerville', serif;
+  --dark-pink: #d19f9c;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #f5f5f5,
+    #e7e0e8,
+    #dfcad6,
+    #dab4bc,
+    #d19f9c
+  );
+}
+
+#root {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 1fr 10fr;
+  height: 100%;
+}

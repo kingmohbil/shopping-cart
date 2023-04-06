@@ -10,17 +10,15 @@ const SideNav = styled.nav`
 
   a {
     font-size: 32px;
-    animation: shine 5s linear 1;
+    animation: fadeout 3s ease-out 1;
   }
 
-  /* TODO:: fixing animation for the links */
-
-  @keyframes shine {
+  @keyframes fadeout {
     0% {
-      background-position-x: -500%;
+      opacity: 0;
     }
     100% {
-      background-position-x: 500%;
+      opacity: 0.7;
     }
   }
 `;

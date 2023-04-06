@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from './components/MainPage';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import SideNav from './components/SideNav';
+import ProductsPage from './components/Products';
 
 const App: React.FC = () => {
   return (
@@ -9,19 +9,11 @@ const App: React.FC = () => {
       <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
-          <Route
-            path="Products"
-            element={
-              <>
-                <HomePage />
-                <SideNav />
-              </>
-            }
-          ></Route>
+          <Route path="Products" element={<ProductsPage />}></Route>
         </Routes>
       </HashRouter>
     </>
   );
 };
-
+// configuration
 export default App;

@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
         </Link>
       </h1>
       <div className="links">
-        <Link to="/products">Products</Link>
+        <Link to="/products/men">Products</Link>
         <Link className="cart-link" to="/cart">
           <FontAwesomeIcon icon={faCartShopping} />
           <span>0</span>

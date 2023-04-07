@@ -2,6 +2,11 @@ import Product from './ProductInterface';
 
 const Products: Product[] = [
   {
+    name: 'Coco Mademoiselle Chanel',
+    image: 'women perfumes/CocoChanel.jpeg',
+    price: 150,
+  },
+  {
     name: 'Chanel Chance',
     image: 'women perfumes/ChanelChance.jpeg',
     price: 100,
@@ -20,11 +25,6 @@ const Products: Product[] = [
     name: 'Dior Joy',
     image: 'women perfumes/DiorJoy.jpeg',
     price: 130,
-  },
-  {
-    name: 'Coco Mademoiselle Chanel',
-    image: 'women perfumes/CocoChanel.jpeg',
-    price: 150,
   },
   {
     name: 'Idole Lancome',

@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   height: 100%;
   margin: 0;
   background-image: linear-gradient(
@@ -21,6 +22,8 @@ body {
     #dab4bc,
     #d19f9c
   );
+
+  background-attachment: fixed;
 }
 
 #root {

@@ -10,7 +10,22 @@ const SideNav = styled.nav`
 
   a {
     font-size: 32px;
-    animation: fadeout 3s ease-out 1;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  :nth-child(1) {
+    animation: 1s ease-in 100ms 1 normal both fadeout;
+  }
+
+  :nth-child(2) {
+    animation: 1s ease-in 200ms 1 normal both fadeout;
+  }
+
+  :nth-child(3) {
+    animation: 1s ease-in 300ms 1 normal both fadeout;
   }
 
   @keyframes fadeout {

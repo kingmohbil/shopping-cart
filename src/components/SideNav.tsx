@@ -1,13 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SideNavContainer from './styles/SideNav-styled';
+import LinkType from './styles/shared/LinkType';
 
-const SideNav: React.FC = () => {
+interface LinkInterface {
+  Links: LinkType[];
+}
+const SideNav: React.FC<LinkInterface> = ({ Links }) => {
   return (
     <SideNavContainer>
-      <Link to="/men">Men</Link>
-      <Link to="/women">Women</Link>
-      <Link to="/unisex">UniSex</Link>
+      {Links.map((link: LinkType) => (
+        <Link
+          className={link.active ? 'active' : ''}
+          to={link.path}
+          key={link.name}
+        >
+          {link.name}
+        </Link>
+      ))}
     </SideNavContainer>
   );
 };

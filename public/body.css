@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 :root {
+  box-sizing: border-box;
   --main-font: 'Libre Baskerville', serif;
   --dark-pink: #d19f9c;
+  --light-brown: #574240;
 }
 
 html {
